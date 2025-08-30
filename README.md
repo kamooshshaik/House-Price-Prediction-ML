@@ -49,7 +49,8 @@ We explored the dataset with multiple visualizations:
 ---
 
 ## 🧪 Model Training & Evaluation
-We trained 3 models and compared them:
+
+We benchmarked three baseline models:
 
 | Model              | R²     | MAE     | RMSE    |
 |--------------------|--------|---------|---------|
@@ -57,7 +58,17 @@ We trained 3 models and compared them:
 | Random Forest      | 0.89   | 0.123   | 0.172   |
 | Gradient Boosting  | 0.90   | 0.124   | 0.171   |
 
-✅ **Final Model**: Gradient Boosting Regressor  
+---
+
+### 🔹 Hyperparameter Tuning (Gradient Boosting)
+We performed an extensive hyperparameter search using **GridSearchCV**:  
+
+- Fitting **3 folds × 81 candidates = 243 fits**  
+- **Best Parameters**:  
+  ```python
+  {'learning_rate': 0.1, 'max_depth': 5, 'min_samples_split': 2, 'n_estimators': 300}
+
+
 
 ---
 
