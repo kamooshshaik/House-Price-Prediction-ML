@@ -1,4 +1,4 @@
-# 🏠 House Price Prediction (ML + Deployment)
+# 🏠 House Price Prediction using Machine Learning
 
 ## 📌 Overview
 This project predicts **house prices** using Machine Learning.  
